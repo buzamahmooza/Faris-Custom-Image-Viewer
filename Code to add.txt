@@ -1,0 +1,123 @@
+
+// make this the default application for opening specific file types
+// boolean editDefaultApplication() {
+// AssociationService serv = new AssociationService();
+//
+// // try to remove old association
+// Association logassoc = serv.getFileExtensionAssociation(".png");
+//
+// try {
+// serv.unregisterUserAssociation(logassoc);
+// } catch (java.lang.IllegalArgumentException |
+// AssociationNotRegisteredException | RegisterFailedException e) {
+// e.printStackTrace();
+// return false;
+// }
+//
+// // add your own application as default
+// logassoc.addFileExtension(".mp3");
+// logassoc.addAction(new org.jdesktop.jdic.filetypes.Action("open", "<path
+// to wrapper executable>"));
+// try {
+// serv.registerUserAssociation(logassoc);
+// } catch (java.lang.IllegalArgumentException | RegisterFailedException
+// | AssociationAlreadyRegisteredException e) {
+// e.printStackTrace();
+// return false;
+// }
+// return true;
+// }
+
+// data flavor for dragging
+// List<File> dropppedFiles =
+// (List<File>)transferable.getTransferData(DataFlavor.javaFileListFlavor);
+
+// public void zoomOut(Point point) {
+// this.picPanel.setZoom(((Wrapper) this.picPanel).getZoom() * 0.9f);
+// Point pos = this.getViewport().getViewPosition();
+//
+// int newX = (int) (pos.x * 0.9f);
+// int newY = (int) (pos.y * 0.9f);
+// this.getViewport().setViewPosition(new Point(newX, newY));
+//
+// this.picPanel.revalidate();
+// this.picPanel.repaint();
+// }
+//
+// public void zoomIn(Point point) {
+// this.picPanel.setZoom(this.picPanel.getZoom() * 1.1f);
+// Point pos = this.getViewport().getViewPosition();
+//
+// int newX = (int) (pos.x * 1.1f);
+// int newY = (int) (pos.y * 1.1f);
+// this.getViewport().setViewPosition(new Point(newX, newY));
+//
+// this.picPanel.revalidate();
+// this.picPanel.repaint();
+// }
+//
+
+/*
+ * 
+ * 
+ * public void zoomOut(Point point) {
+ * this.picPanel.setZoom(this.picPanel.getZoom() * 0.9f); Point pos =
+ * this.getViewport().getViewPosition();
+ * 
+ * int newX = (int) (pos.x * 0.9f); int newY = (int) (pos.y * 0.9f);
+ * this.getViewport().setViewPosition(new Point(newX, newY));
+ * 
+ * this.picPanel.revalidate(); this.picPanel.repaint(); }
+ * 
+ * public void zoomIn(Point point) {
+ * this.picPanel.setZoom(this.picPanel.getZoom() * 1.1f); Point pos =
+ * this.getViewport().getViewPosition();
+ * 
+ * int newX = (int) (pos.x * 1.1f); int newY = (int) (pos.y * 1.1f);
+ * this.getViewport().setViewPosition(new Point(newX, newY));
+ * 
+ * this.picPanel.revalidate(); this.picPanel.repaint(); }
+ * 
+ */
+
+// How to zoom toward mouse in JAVASCRIPT
+/*
+ * var zoomIntensity = 0.2;
+ * 
+ * var canvas = document.getElementById("canvas"); var context =
+ * canvas.getContext("2d"); var width = 600; var height = 200;
+ * 
+ * var scale = 1; var originx = 0; var originy = 0; var visibleWidth = width;
+ * var visibleHeight = height;
+ * 
+ * 
+ * function draw(){ // Clear screen to white. context.fillStyle = "white";
+ * context.fillRect(originx,originy,800/scale,600/scale); // Draw the black
+ * square. context.fillStyle = "black"; context.fillRect(50,50,100,100); } //
+ * Draw loop at 60FPS. setInterval(draw, 1000/60);
+ * 
+ * canvas.onmousewheel = function (event){ event.preventDefault(); // Get mouse
+ * offset. var mousex = event.clientX - canvas.offsetLeft; var mousey =
+ * event.clientY - canvas.offsetTop; // Normalize wheel to +1 or -1. var wheel =
+ * event.wheelDelta/120;
+ * 
+ * // Compute zoom factor. var zoom = Math.exp(wheel*zoomIntensity);
+ * 
+ * // Translate so the visible origin is at the context's origin.
+ * context.translate(originx, originy);
+ * 
+ * // Compute the new visible origin. Originally the mouse is at a // distance
+ * mouse/scale from the corner, we want the point under // the mouse to remain
+ * in the same place after the zoom, but this // is at mouse/new_scale away from
+ * the corner. Therefore we need to // shift the origin (coordinates of the
+ * corner) to account for this. originx -= mousex/(scale*zoom) - mousex/scale;
+ * originy -= mousey/(scale*zoom) - mousey/scale;
+ * 
+ * // Scale it (centered around the origin due to the trasnslate above).
+ * context.scale(zoom, zoom); // Offset the visible origin to it's proper
+ * position. context.translate(-originx, -originy);
+ * 
+ * // Update scale and others. scale *= zoom; visibleWidth = width / scale;
+ * visibleHeight = height / scale; }
+ * 
+ */

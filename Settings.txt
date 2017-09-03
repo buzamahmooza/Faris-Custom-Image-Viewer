@@ -1,0 +1,10 @@
+200 SCROLL_SPEED
+0.5 MIN_ZOOM
+10.0 MAX_ZOOM
+20 imagePropertiesSize
+100.0 zoom
+false zoomTowardMouse
+true loopImages
+true ShowHiddenFiles
+false startMaximized
+false includeDirectories
