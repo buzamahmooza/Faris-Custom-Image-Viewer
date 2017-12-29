@@ -9,6 +9,8 @@ When you open a file with this program, a list is created and the file is added.
 
 # Current Features
 - Traverse all files and directories under the same directory of the current image file.
+- Drag and drop files or folders on to the image viewer window to add them to the list.
+- Show the current image list loaded in the program, and clicking on the item will show it in the system explorer.
 
 
 
