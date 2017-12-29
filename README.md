@@ -26,11 +26,11 @@ Thumbnail view
 	- Make sure that images are in correct order upon loading, and the opened image is what's shown.
 	 
 - #### GIFs:
-	-Fix playback speed
-	-Fix blank screen on GIFs: (sometimes if a gif takes too long to load, it will stay all blank, until navigating away then back)
-	-Fix properties label problem with gifs
-	-Start GIF from beginning when navigating to it (current problem: GIF is always playing even when not open).
-	-Show GIF timeline
+	- Fix playback speed
+	- Fix blank screen on GIFs: (sometimes if a gif takes too long to load, it will stay all blank, until navigating away then back)
+	- Fix properties label problem with gifs
+	- Start GIF from beginning when navigating to it (current problem: GIF is always playing even when not open).
+	- Show GIF timeline
 Fix deletion problem
 - #### ImageList:
 	- Put the image count in the title
