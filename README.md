@@ -2,7 +2,7 @@
 Simple but useful image viewer (made with java).
 
 #### Downloads:
-- [Version 1.3](http://www.filehosting.org/file/download/716023/XyO61lXGXBiNBkLO).
+- [Version 1.3 Download](http://www.filehosting.org/file/download/716023/XyO61lXGXBiNBkLO).
 
 # Why make an image viewer?
 The reason is because I hate the windows image viewer, it has problems. If Microsoft isn't gonna fix them, then I can make my own image viewer.
