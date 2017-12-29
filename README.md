@@ -2,7 +2,7 @@
 Simple but useful image viewer (made with java).
 
 #### Downloads:
-- [Version 1.3 Download](http://www.filehosting.org/file/download/716023/XyO61lXGXBiNBkLO).
+- [Version 1.3 Download](http://www.filehosting.org/file/download/716023/XyO61lXGXBiNBkLO)
 
 # Why make an image viewer?
 The reason is because I hate the windows image viewer, it has problems. If Microsoft isn't gonna fix them, then I can make my own image viewer.
@@ -11,12 +11,9 @@ The reason is because I hate the windows image viewer, it has problems. If Micro
 When you open a file with this program, a list is created and the file is added. All the other files under the same directory will be added too. And my favorite part: files inside sibbling directories will be traversed and added as well!
 
 # Current Features
-- Traverse all files and directories under the same directory of the current image file.
-- Drag and drop files or folders on to the image viewer window to add them to the list.
-- Show the current image list loaded in the program, and clicking on the item will show it in the system explorer.
-
-
-
+- [x] Traverse all files and directories under the same directory of the current image file.
+- [x] Drag and drop files or folders on to the image viewer window to add them to the list.
+- [x] Show the current image list loaded in the program, and clicking on the item will show it in the system explorer.
 
 # Features to add
 - #### Scroll/Zoom:
